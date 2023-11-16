@@ -86,7 +86,7 @@ public class Building {
     }
 
     public void showOptions() {
-        System.out.println("Available options at " + this.name + ":\n + enter() \n + exit() \n + goUp() \n + goDown()\n + goToFloor(n)");
+        System.out.print("Available options at " + this.name + ":\n + enter() \n + exit() \n + goUp() \n + goDown()\n + goToFloor(n)");
     }
 
     public String toString() {
@@ -107,6 +107,8 @@ public class Building {
         System.out.println("-----------------------------------");
         fordHall.enter();
         fordHall.goUp();
+        fordHall.goDown();
+        fordHall.goToFloor(4);
         fordHall.goDown();
         fordHall.exit();
     }
